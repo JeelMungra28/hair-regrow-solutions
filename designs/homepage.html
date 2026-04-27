@@ -13,9 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -558,93 +555,155 @@
                 </div>
             </div>
         </section>
-        <!-- 11. FINAL CTA -->
-        <section class="py-24 bg-primary relative overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <img class="w-full h-full object-cover"
-                    data-alt="Microscopic view of hair follicles with a soft golden glow representing healthy growth and vitality"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34NHmfz1E_7oE0Qsvl-XFvyUGIgXjTrszHSaw_xFvB7xSH7QbW2RW7SOL_Pok3PmLRcNp53XuLu37IMnlHXtABWQIaGxI7FjyvLXneEs5nuC3DBfaudCkxQktP4s52ZiAns-nlG9Uao2ul-E3vSXTp4Ycmo4IhGOuEGCut3VxYNc8mpWyV0jByly3hwnQX5MbJesjxOQki3az7Xp7674u0ZTOQCU863Z4RSVgkuIS68EL_SQguEGqNpmixSIUQ3I3egcnTszmMoGV" />
-            </div>
-            <div class="max-w-7xl mx-auto px-8 text-center relative z-10">
-                <h2 class="text-display-xl font-display-xl text-on-primary mb-8">Start Your Hair Restoration Journey
-                    Today</h2>
-                <p class="text-on-primary/80 mb-12 text-body-lg max-w-2xl mx-auto">Take the first step toward clinical
-                    excellence and renewed confidence with a complimentary specialist assessment.</p>
-                <div class="flex flex-wrap justify-center gap-6">
+        <!-- CTA STRIP -->
+        <section class="relative py-24 bg-surface-container-lowest overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent pointer-events-none"></div>
+            <div
+                class="max-w-[1280px] mx-auto px-10 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="max-w-3xl">
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Ready to Begin Your Hair
+                        Restoration Journey?</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">Start with a personalized hair and
+                        scalp analysis. Get expert insights and a customized non-surgical plan designed for long-term
+                        hair health and density improvement.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 shrink-0">
                     <button
-                        class="bg-surface-container-lowest text-primary px-10 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-2xl">Book
-                        My Free Consult</button>
+                        class="bg-[#C9A34E] text-on-primary font-label-md text-label-md px-8 py-4 uppercase transition-all hover:brightness-110 active:scale-95">
+                        Book Free Consultation
+                    </button>
                     <button
-                        class="border-2 border-surface-container-lowest text-surface-container-lowest px-10 py-5 rounded-lg font-bold text-lg hover:bg-surface-container-lowest hover:text-primary transition-all">View
-                        Our Clinics</button>
+                        class="border border-[#C9A34E] text-[#C9A34E] font-label-md text-label-md px-8 py-4 uppercase transition-all hover:bg-primary/10 active:scale-95">
+                        Explore Hair Restoration Solutions
+                    </button>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="w-full border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
-            <div class="col-span-1 md:col-span-1">
-                <span class="text-2xl font-bold text-neutral-900 dark:text-white mb-4 block font-headline-lg">Hair
-                    ReGrow</span>
-                <p class="text-neutral-500 dark:text-neutral-500 font-['Lexend'] text-sm leading-relaxed mb-6">
-                    Restoring confidence through clinical science and bespoke care in the heart of New York.
+    <!-- MAIN FOOTER -->
+    <footer class="bg-slate-950 pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+            <!-- Brand Section -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+                <div class="text-2xl font-semibold tracking-tighter text-amber-500 font-['Lexend']">
+                    HAIR REGROW SOLUTIONS
+                </div>
+                <p class="text-slate-400 font-body-md text-sm leading-relaxed">
+                    Hair ReGrow Solutions is a specialized non-surgical hair restoration clinic in New York, offering
+                    advanced scalp treatments, personalized hair regrowth plans, and trichology-based care. We focus on
+                    improving scalp health, restoring hair density, and delivering long-term, natural-looking results
+                    for men and women experiencing hair thinning, shedding, and hair loss.
                 </p>
-                <div class="flex gap-4">
+                <div class="flex gap-4 mt-2">
                     <span
-                        class="material-symbols-outlined text-[#C9A34E] opacity-100 hover:opacity-80 transition-opacity cursor-pointer">public</span>
+                        class="text-amber-500 cursor-pointer hover:text-amber-400 transition-colors material-symbols-outlined">public</span>
                     <span
-                        class="material-symbols-outlined text-[#C9A34E] opacity-100 hover:opacity-80 transition-opacity cursor-pointer">share</span>
+                        class="text-amber-500 cursor-pointer hover:text-amber-400 transition-colors material-symbols-outlined">share</span>
                     <span
-                        class="material-symbols-outlined text-[#C9A34E] opacity-100 hover:opacity-80 transition-opacity cursor-pointer">contact_mail</span>
+                        class="text-amber-500 cursor-pointer hover:text-amber-400 transition-colors material-symbols-outlined">medical_services</span>
                 </div>
             </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-neutral-400">Services</h4>
-                <ul class="space-y-4 font-['Lexend'] text-sm">
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Scalp Analysis</a></li>
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Non-Surgical Infusions</a></li>
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Laser Restoration</a></li>
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Maintenance Programs</a></li>
+            <!-- Pages Section -->
+            <div class="lg:col-span-2">
+                <h4 class="text-amber-500 font-['Lexend'] tracking-tight text-sm uppercase font-semibold mb-8">Pages
+                </h4>
+                <ul class="flex flex-col gap-4">
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">About Hair ReGrow Solutions</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Hair Loss Consultation</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Hair Restoration Treatments</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Scalp Micropigmentation (SMP)</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Blog &amp; Hair Regrowth Guides</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Frequently Asked Questions</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Contact Our Clinic</a></li>
                 </ul>
             </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-neutral-400">Clinical</h4>
-                <ul class="space-y-4 font-['Lexend'] text-sm">
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Privacy Policy</a></li>
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Terms of Service</a></li>
-                    <li><a class="text-[#C9A34E] font-semibold hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Clinical Standards</a></li>
-                    <li><a class="text-neutral-500 dark:text-neutral-500 hover:text-[#C9A34E] underline-offset-4 hover:underline transition-opacity"
-                            href="#">Accessibility</a></li>
+            <!-- Solutions Section -->
+            <div class="lg:col-span-3">
+                <h4
+                    class="text-amber-500 font-['Lexend'] tracking-tight text-sm uppercase font-semibold mb-8 text-nowrap">
+                    Hair Restoration Solutions</h4>
+                <ul class="flex flex-col gap-4">
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Hair &amp; Scalp Analysis (Consultation)</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Laser Hair Wellness Therapy (LLLT)</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Advanced Scalp Infusions</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Scalp Detox &amp; Rejuvenation</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Advanced Hair Growth Support Programs</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Scalp Micropigmentation (SMP)</a></li>
+                    <li><a class="text-slate-400 hover:text-amber-400 transition-colors text-sm font-light uppercase tracking-tight font-['Lexend']"
+                            href="#">Non-Surgical Hair Replacement</a></li>
                 </ul>
             </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-neutral-400">Newsletter</h4>
-                <p class="text-neutral-500 dark:text-neutral-500 text-sm mb-4">Stay updated with the latest in hair
-                    restoration science.</p>
-                <div class="flex gap-2">
-                    <input
-                        class="bg-transparent border border-neutral-800 rounded px-3 py-2 text-sm w-full outline-none focus:border-[#C9A34E]"
-                        placeholder="Email" type="email" />
-                    <button class="bg-[#C9A34E] text-neutral-900 p-2 rounded material-symbols-outlined">send</button>
+            <!-- Visit Section -->
+            <div class="lg:col-span-3">
+                <h4 class="text-amber-500 font-['Lexend'] tracking-tight text-sm uppercase font-semibold mb-8">Visit Our
+                    Hair Clinic in New York</h4>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <span
+                            class="text-amber-500 text-xs font-semibold uppercase tracking-widest block mb-2 font-['Lexend']">Midtown
+                            Manhattan</span>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">10 W 46th St, Suite 1403<br />New
+                            York, NY 10036</p>
+                    </div>
+                    <div>
+                        <span
+                            class="text-amber-500 text-xs font-semibold uppercase tracking-widest block mb-2 font-['Lexend']">White
+                            Plains</span>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">445 Hamilton Ave, Suite 100 Studio
+                            #7<br />White Plains, NY 10601</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/50">
+                        <p class="text-slate-300 text-sm font-medium mb-1">P: +1 914 333 8494</p>
+                        <p class="text-slate-300 text-sm font-medium">E: info@hairregrowsolutions.com</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-8 py-8 border-t border-neutral-200 dark:border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-neutral-500 dark:text-neutral-500 font-['Lexend'] text-sm">© 2024 Hair ReGrow Solutions. All
-                rights reserved.</p>
-            <div class="flex gap-8">
-                <span class="material-symbols-outlined text-neutral-400">medical_information</span>
-                <span class="material-symbols-outlined text-neutral-400">verified_user</span>
-                <span class="material-symbols-outlined text-neutral-400">security</span>
+        <!-- Serving Line -->
+        <div class="max-w-7xl mx-auto px-10 mt-16 pt-8 border-t border-slate-800/50">
+            <p class="text-slate-500 text-xs uppercase tracking-[0.15em] font-light text-center font-['Lexend']">
+                Serving clients across New York City, Manhattan, and Westchester with advanced non-surgical hair
+                restoration solutions.
+            </p>
+        </div>
+        <!-- BOTTOM BAR -->
+        <div class="max-w-7xl mx-auto px-10 mt-12 flex flex-col items-center">
+            <!-- SEO Micro-text -->
+            <div class="w-full text-center mb-8">
+                <span class="text-slate-700 text-[10px] uppercase tracking-widest font-['Lexend']">
+                    Non-surgical hair restoration in New York | Hair regrowth solutions NYC | Scalp treatment clinic
+                    Manhattan | Hair loss consultation New York
+                </span>
+            </div>
+            <div
+                class="w-full flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-slate-800/30">
+                <div
+                    class="text-slate-500 text-[11px] font-light font-['Lexend'] uppercase tracking-wider text-center md:text-left">
+                    Copyright © 2026 Hair ReGrow Solutions. All Rights Reserved. Developed By BUGLE
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a class="text-slate-500 hover:text-amber-500 transition-colors text-[11px] font-medium uppercase tracking-wider font-['Lexend']"
+                        href="#">Privacy Policy</a>
+                    <a class="text-slate-500 hover:text-amber-500 transition-colors text-[11px] font-medium uppercase tracking-wider font-['Lexend']"
+                        href="#">Legal Disclosure</a>
+                    <a class="text-slate-500 hover:text-amber-500 transition-colors text-[11px] font-medium uppercase tracking-wider font-['Lexend']"
+                        href="#">Accessibility Statement</a>
+                    <a class="text-slate-500 hover:text-amber-500 transition-colors text-[11px] font-medium uppercase tracking-wider font-['Lexend']"
+                        href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>
