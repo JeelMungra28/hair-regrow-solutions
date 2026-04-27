@@ -178,71 +178,71 @@
             <div class="card-content">
                 <h3>Homepage Design</h3>
                 <p>Main homepage layout for Hair ReGrow Solutions.</p>
-                <a href="/Designs/homepage.html">View Design</a>
+                <a href="designs/homepage.html"">View Design</a>
             </div>
         </div>
 
-        <div class="card footer">
-            <img src="assets/images/footer.jpg">
-            <div class="card-content">
-                <h3>Footer Design</h3>
-                <p>Dark footer with SEO structure.</p>
-                <a href="/Designs/footer.html">View Design</a>
+        <div class=" card footer">
+                    <img src="assets/images/footer.jpg">
+                    <div class="card-content">
+                        <h3>Footer Design</h3>
+                        <p>Dark footer with SEO structure.</p>
+                        <a href="designs/footer.html">View Design</a>
+                    </div>
             </div>
+
+            <div class="card navbar">
+                <img src="assets/images/navbar.jpg">
+                <div class="card-content">
+                    <h3>Navbar Design</h3>
+                    <p>Main navigation system layout.</p>
+                    <a href="designs/navbar.html">View Design</a>
+                </div>
+            </div>
+
+            <div class="card pages">
+                <img src="assets/images/consultation.jpg">
+                <div class="card-content">
+                    <h3>Consultation Page</h3>
+                    <p>Hair loss consultation page UI.</p>
+                    <a href="designs/consultation.html">View Design</a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="card navbar">
-            <img src="assets/images/navbar.jpg">
-            <div class="card-content">
-                <h3>Navbar Design</h3>
-                <p>Main navigation system layout.</p>
-                <a href="designs/navbar.html">View Design</a>
-            </div>
-        </div>
+        <footer>
+            © 2026 Hair ReGrow Solutions – UI Design System
+        </footer>
 
-        <div class="card pages">
-            <img src="assets/images/consultation.jpg">
-            <div class="card-content">
-                <h3>Consultation Page</h3>
-                <p>Hair loss consultation page UI.</p>
-                <a href="designs/consultation.html">View Design</a>
-            </div>
-        </div>
+        <script>
+            function filterSelection(category, e) {
+                let cards = document.querySelectorAll(".card");
+                let buttons = document.querySelectorAll(".filters button");
 
-    </div>
+                buttons.forEach(btn => btn.classList.remove("active"));
+                e.target.classList.add("active");
 
-    <footer>
-        © 2026 Hair ReGrow Solutions – UI Design System
-    </footer>
+                cards.forEach(card => {
+                    if (category === "all" || card.classList.contains(category)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            }
 
-    <script>
-        function filterSelection(category, e) {
-            let cards = document.querySelectorAll(".card");
-            let buttons = document.querySelectorAll(".filters button");
+            // Search functionality
+            document.getElementById("search").addEventListener("keyup", function () {
+                let value = this.value.toLowerCase();
+                let cards = document.querySelectorAll(".card");
 
-            buttons.forEach(btn => btn.classList.remove("active"));
-            e.target.classList.add("active");
-
-            cards.forEach(card => {
-                if (category === "all" || card.classList.contains(category)) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
+                cards.forEach(card => {
+                    let text = card.innerText.toLowerCase();
+                    card.style.display = text.includes(value) ? "block" : "none";
+                });
             });
-        }
-
-        // Search functionality
-        document.getElementById("search").addEventListener("keyup", function () {
-            let value = this.value.toLowerCase();
-            let cards = document.querySelectorAll(".card");
-
-            cards.forEach(card => {
-                let text = card.innerText.toLowerCase();
-                card.style.display = text.includes(value) ? "block" : "none";
-            });
-        });
-    </script>
+        </script>
 
 </body>
 
